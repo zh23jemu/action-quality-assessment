@@ -1,0 +1,39 @@
+# Python 本地环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 本地配置、密钥和临时文件
+.env
+.env.*
+*.local
+
+# 数据集、特征、权重和实验输出通常体积较大或属于本地运行态
+data/raw/*
+data/processed/*
+external/*
+outputs/checkpoints/*
+outputs/logs/*
+outputs/metrics/*
+outputs/predictions/*
+
+# 允许保留目录说明文件
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!external/.gitkeep
+!outputs/checkpoints/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/predictions/.gitkeep
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 压缩交付包
+*.zip
