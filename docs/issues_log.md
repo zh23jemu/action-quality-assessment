@@ -41,3 +41,11 @@
 - 解决方案：保存 checkpoint 前将配置转换为 JSON 安全类型；加载本项目可信 checkpoint 时显式兼容 `weights_only=False`。
 - 是否影响结果：不影响模型结果，但会影响训练后测试脚本能否直接读取 checkpoint。
 - PPT 素材建议：可作为“版本兼容性修复”示例，体现代码适配过程。
+
+## 问题 6：Ready_2_Use 只有标注和划分，没有可直接训练的视频特征
+
+- 问题现象：`data/raw/Ready_2_Use/MTL-AQA_split_0_data` 包含 `final_annotations_dict.pkl`、`train_split_0.pkl`、`test_split_0.pkl`，但没有 `.npy` / `.pt` 特征文件。
+- 原因分析：官方发布的 Ready_2_Use pkl 主要用于提供分数、动作属性和划分；视频仍需根据 `Video_List.xlsx` 下载并抽帧，或另行生成 C3D/I3D 等特征。
+- 解决方案：已补充 pkl 解析逻辑，可生成 manifest；正式训练前需要先完成视频下载和特征抽取，再补齐 `feature_path`。
+- 是否影响结果：影响。没有特征时不能进行正式训练。
+- PPT 素材建议：放入“数据处理流程”页，说明标注解析与特征抽取是两个阶段。

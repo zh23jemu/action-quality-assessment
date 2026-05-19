@@ -53,11 +53,12 @@
 - 修复冒烟特征路径二次拼接问题，并兼容 PyTorch 2.6+ checkpoint 默认 `weights_only=True` 的加载策略变化。
 - 本地验证结果：语法检查通过；Motion 冒烟测试输出 SRC/R-L2；Pose 冒烟测试输出五类动作属性 F1；两个模型的单样本推理均可生成 JSON。
 - 新增 `scripts/fetch_upstream.py`，已通过 Python 标准库下载并解压 `external/MTL-AQA` 与 `external/Fitness-AQA`。
+- `scripts/prepare_data.py` 已支持解析官方 `Ready_2_Use/MTL-AQA_split_0_data` pkl，生成包含分数、动作属性、起止帧和 split 的 manifest。
 
 ## Next TODO
 
 - 将 MTL-AQA 原始数据或特征放入 `data/raw/`，运行 `scripts/prepare_data.py` 生成 `data/processed/mtl_aqa_manifest.csv`。
-- 若只有原始视频，需要先补充视频特征抽取流程或接入上游 C3D/I3D 特征。
+- 若只有官方 Ready_2_Use 标注和原始视频，需要先补充视频特征抽取流程或接入上游 C3D/I3D 特征。
 - 在 GPU 环境安装依赖并执行 Slurm 冒烟测试，再提交完整训练。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
 

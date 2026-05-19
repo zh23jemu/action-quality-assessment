@@ -46,7 +46,7 @@ sample_id,split,feature_path,score,position,armstand,rotation_type,somersaults,t
 .venv/bin/python scripts/prepare_data.py --raw-dir data/raw --output data/processed/mtl_aqa_manifest.csv
 ```
 
-如果只有原始视频，应先使用上游代码或单独的视频特征抽取流程生成 `.npy` / `.pt` 特征，并在 manifest 的 `feature_path` 中填写路径。
+如果 `data/raw/Ready_2_Use/MTL-AQA_split_0_data` 存在，脚本会优先解析官方 pkl，生成包含分数、动作属性、起止帧和训练/测试划分的 manifest。官方 pkl 不包含视频特征，因此 `feature_path` 会先留空；正式训练前应使用上游代码或单独的视频特征抽取流程生成 `.npy` / `.pt` 特征，并在 manifest 的 `feature_path` 中填写路径。
 
 ## 训练与测试
 
