@@ -54,6 +54,7 @@
 - 本地验证结果：语法检查通过；Motion 冒烟测试输出 SRC/R-L2；Pose 冒烟测试输出五类动作属性 F1；两个模型的单样本推理均可生成 JSON。
 - 新增 `scripts/fetch_upstream.py`，已通过 Python 标准库下载并解压 `external/MTL-AQA` 与 `external/Fitness-AQA`。
 - `scripts/prepare_data.py` 已支持解析官方 `Ready_2_Use/MTL-AQA_split_0_data` pkl，生成包含分数、动作属性、起止帧和 split 的 manifest。
+- 本地已通过代理和 Cookie 成功下载 MTL-AQA 视频 `01.mp4`、`02.mp4`；后续链接触发 YouTube Cookie/风控问题，需要重新导出 Cookie 后续传。
 
 ## Next TODO
 
@@ -61,6 +62,7 @@
 - 若只有官方 Ready_2_Use 标注和原始视频，需要先补充视频特征抽取流程或接入上游 C3D/I3D 特征。
 - 在 GPU 环境安装依赖并执行 Slurm 冒烟测试，再提交完整训练。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
+- 继续下载剩余 MTL-AQA 视频：`03、04、05、06、07、09、10、13、14、17、18、22、26`。
 
 ## Open Issues
 
@@ -68,6 +70,7 @@
 - Fitness-AQA 原方法主要面向健身动作，Pose Contrastive 的 F1 在 MTL-AQA 上采用动作属性多分类口径，需在报告中说明适配口径。
 - Motion Disentangling 若无法获得原始上游完整实现，需要以论文思想和公开说明实现可运行复现，并在 PPT 中记录差异。
 - 当前本机 `torch.cuda.is_available()` 为 `False`，正式训练必须到 Slurm GPU 环境执行。
+- YouTube 下载存在网络与风控限制，当前仅完成 `01.mp4`、`02.mp4`，还不能完整抽帧。
 
 ## Architecture Decisions
 
