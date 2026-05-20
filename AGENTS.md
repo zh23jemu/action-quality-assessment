@@ -42,7 +42,7 @@
 
 ## Current Status
 
-已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。已在本地 `.venv` 中安装基础依赖与 `torch-2.12.0+cu126`，并完成两个模型的 CPU 合成冒烟训练、测试和单样本推理。当前本地尚未放置 MTL-AQA 数据，不能产出真实训练指标。
+已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。服务器 GPU 与两个模型 synthetic smoke 已验证通过；MTL-AQA 15 个原始视频已下载、通过 GitHub Release 同步到服务器并完成抽帧。当前已新增轻量帧统计特征抽取入口，下一步需要在服务器生成 `data/processed/mtl_aqa_manifest_features.csv` 后启动真实训练。
 
 ## Recent Changes
 
@@ -54,26 +54,27 @@
 - 本地验证结果：语法检查通过；Motion 冒烟测试输出 SRC/R-L2；Pose 冒烟测试输出五类动作属性 F1；两个模型的单样本推理均可生成 JSON。
 - 新增 `scripts/fetch_upstream.py`，已通过 Python 标准库下载并解压 `external/MTL-AQA` 与 `external/Fitness-AQA`。
 - `scripts/prepare_data.py` 已支持解析官方 `Ready_2_Use/MTL-AQA_split_0_data` pkl，生成包含分数、动作属性、起止帧和 split 的 manifest。
-- 本地已通过代理和 Cookie 成功下载 MTL-AQA 视频 `01.mp4`、`02.mp4`；后续链接触发 YouTube Cookie/风控问题，需要重新导出 Cookie 后续传。
+- 本地已通过代理和 Cookie 成功下载 MTL-AQA 全部 15 个视频，并上传到 GitHub Release `mtl-aqa-videos-480p` 供服务器下载。
+- 服务器已加载 `ffmpeg/4.2.10` 完成抽帧；`prepare_data.py` 能生成 1412 条 manifest，但在特征抽取前 `missing_features=1412` 属于预期。
+- 新增 `scripts/extract_features.py` 与 `slurm/extract_features.slurm`，使用真实抽帧图片生成 128 维轻量视频特征并输出带 `feature_path` 的 manifest。
+- 更新训练 Slurm 脚本，默认读取 `data/processed/mtl_aqa_manifest_features.csv`。
 
 ## Next TODO
 
-- 将 MTL-AQA 原始数据或特征放入 `data/raw/`，运行 `scripts/prepare_data.py` 生成 `data/processed/mtl_aqa_manifest.csv`。
-- 若只有官方 Ready_2_Use 标注和原始视频，需要先补充视频特征抽取流程或接入上游 C3D/I3D 特征。
-- 在 GPU 环境安装依赖并执行 Slurm 冒烟测试，再提交完整训练。
+- 在服务器运行 `slurm/extract_features.slurm` 或 `.venv/bin/python scripts/extract_features.py`，生成 `data/processed/mtl_aqa_manifest_features.csv`。
+- 使用带特征 manifest 启动 Motion 与 Pose 的正式训练，并保存测试指标 JSON。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
-- 继续下载剩余 MTL-AQA 视频：`03、04、05、06、07、09、10、13、14、17、18、22、26`。
 
 ## Open Issues
 
-- 当前仓库没有真实 MTL-AQA 数据或特征文件；上游代码副本已下载到 `external/`，但该目录按本地依赖处理，不纳入提交。
+- 当前仓库不提交真实 MTL-AQA 视频、抽帧图片或特征文件；这些数据通过 GitHub Release 和服务器本地目录管理。
 - Fitness-AQA 原方法主要面向健身动作，Pose Contrastive 的 F1 在 MTL-AQA 上采用动作属性多分类口径，需在报告中说明适配口径。
 - Motion Disentangling 若无法获得原始上游完整实现，需要以论文思想和公开说明实现可运行复现，并在 PPT 中记录差异。
-- 当前本机 `torch.cuda.is_available()` 为 `False`，正式训练必须到 Slurm GPU 环境执行。
-- YouTube 下载存在网络与风控限制，当前仅完成 `01.mp4`、`02.mp4`，还不能完整抽帧。
+- 当前帧统计特征是最小可运行真实视频特征，不等价于论文原始 C3D/I3D/pose 特征；正式报告需要说明该适配差异。
 
 ## Architecture Decisions
 
 - 默认不使用合成数据产出正式指标；合成数据只允许通过 `--synthetic-smoke` 显式启用，用于验证代码链路。
 - 训练脚本优先读取预抽取特征，避免在训练入口中混入耗时、依赖复杂的视频解码逻辑。
 - 指标统一输出 JSON，便于后续截图、汇总和写入 PPT。
+- 由于上游两个仓库代码不完整，先采用真实帧统计特征打通端到端训练评估链路；后续可在不改变 manifest 接口的前提下替换为更强视频/姿态特征。

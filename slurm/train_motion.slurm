@@ -19,9 +19,10 @@ set -euo pipefail
 
 cd "${SLURM_SUBMIT_DIR}"
 
-# 训练前请确认 .venv 中已安装 CUDA 12.x 兼容 PyTorch，并已生成 data/processed/mtl_aqa_manifest.csv。
+# 训练前请确认 .venv 中已安装 CUDA 12.x 兼容 PyTorch，并已先运行特征抽取脚本，
+# 生成带 feature_path 的 data/processed/mtl_aqa_manifest_features.csv。
 .venv/bin/python scripts/train_motion.py \
-  --manifest data/processed/mtl_aqa_manifest.csv \
+  --manifest data/processed/mtl_aqa_manifest_features.csv \
   --epochs 30 \
   --batch-size 16 \
   --checkpoint outputs/checkpoints/motion_best.pt \

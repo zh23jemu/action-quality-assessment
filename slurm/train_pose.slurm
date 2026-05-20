@@ -20,7 +20,7 @@ set -euo pipefail
 cd "${SLURM_SUBMIT_DIR}"
 
 .venv/bin/python scripts/train_pose.py \
-  --manifest data/processed/mtl_aqa_manifest.csv \
+  --manifest data/processed/mtl_aqa_manifest_features.csv \
   --epochs 30 \
   --batch-size 16 \
   --checkpoint outputs/checkpoints/pose_best.pt \
