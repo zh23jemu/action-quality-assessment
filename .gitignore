@@ -15,19 +15,11 @@ __pycache__/
 data/raw/*
 data/processed/*
 external/*
-outputs/checkpoints/*
-outputs/logs/*
-outputs/metrics/*
-outputs/predictions/*
 
 # 允许保留目录说明文件
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !external/.gitkeep
-!outputs/checkpoints/.gitkeep
-!outputs/logs/.gitkeep
-!outputs/metrics/.gitkeep
-!outputs/predictions/.gitkeep
 
 # 编辑器与系统文件
 .vscode/

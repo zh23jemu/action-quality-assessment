@@ -62,7 +62,7 @@
 ## Next TODO
 
 - 在服务器运行 `slurm/extract_features.slurm` 或 `.venv/bin/python scripts/extract_features.py`，生成 `data/processed/mtl_aqa_manifest_features.csv`。
-- 服务器拉取最新修复后，重新提交 Motion 与 Pose 的正式训练任务，并保存测试指标 JSON。
+- 服务器拉取最新 `.gitignore` 后，同步 `outputs/` 训练日志、指标 JSON、预测结果和必要 checkpoint 供本地分析。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
 
 ## Open Issues
