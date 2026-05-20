@@ -1,0 +1,68 @@
+{
+  "model": "Motion Disentangling",
+  "split": "test",
+  "checkpoint": "outputs/checkpoints/motion_best.pt",
+  "SRC": 0.766117623237784,
+  "R-L2": 0.16825498963955404,
+  "num_samples": 353,
+  "predictions_preview": [
+    {
+      "sample_id": "01_0001",
+      "true_score": 88.0,
+      "pred_score": 65.97328186035156
+    },
+    {
+      "sample_id": "01_0003",
+      "true_score": 75.19999694824219,
+      "pred_score": 71.43411254882812
+    },
+    {
+      "sample_id": "01_0004",
+      "true_score": 72.0,
+      "pred_score": 75.05005645751953
+    },
+    {
+      "sample_id": "01_0005",
+      "true_score": 72.0,
+      "pred_score": 76.91499328613281
+    },
+    {
+      "sample_id": "01_0007",
+      "true_score": 66.0,
+      "pred_score": 75.31529998779297
+    },
+    {
+      "sample_id": "01_0019",
+      "true_score": 59.400001525878906,
+      "pred_score": 78.85584259033203
+    },
+    {
+      "sample_id": "01_0026",
+      "true_score": 86.4000015258789,
+      "pred_score": 69.76502227783203
+    },
+    {
+      "sample_id": "01_0028",
+      "true_score": 72.0,
+      "pred_score": 80.07479095458984
+    },
+    {
+      "sample_id": "01_0029",
+      "true_score": 73.80000305175781,
+      "pred_score": 65.50056457519531
+    },
+    {
+      "sample_id": "01_0030",
+      "true_score": 51.20000076293945,
+      "pred_score": 57.327877044677734
+    }
+  ],
+  "env": {
+    "time": "2026-05-20 19:07:12",
+    "project_root": "/mnt/users/xj62kv/action-quality-assessment",
+    "torch": "2.12.0+cu126",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA L40S"
+  }
+}
