@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/mnt/users/xj62kv/action-quality-assessment/scripts/train_pose.py", line 152, in <module>
+    main()
+  File "/mnt/users/xj62kv/action-quality-assessment/scripts/train_pose.py", line 103, in main
+    for batch in train_loader:
+  File "/mnt/users/xj62kv/action-quality-assessment/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 718, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 778, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/.venv/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/.venv/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/scripts/aqa_common.py", line 475, in __getitem__
+    item = dataset.item(index)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/scripts/aqa_common.py", line 457, in item
+    "feature": load_feature(row, self.manifest_dir, self.input_dim, self.allow_metadata_fallback),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/users/xj62kv/action-quality-assessment/scripts/aqa_common.py", line 167, in load_feature
+    raise FileNotFoundError(f"特征文件不存在：{path}")
+FileNotFoundError: 特征文件不存在：/mnt/users/xj62kv/action-quality-assessment/data/processed/data/processed/features/04_0129.npy

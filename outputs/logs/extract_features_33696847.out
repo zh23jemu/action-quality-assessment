@@ -1,0 +1,13 @@
+Requirement already satisfied: pillow in ./.venv/lib/python3.11/site-packages (12.2.0)
+{"processed": 300, "failures": 0}
+{"processed": 350, "failures": 0}
+{"processed": 600, "failures": 0}
+{"processed": 650, "failures": 0}
+{"processed": 1200, "failures": 0}
+{
+  "total": 1412,
+  "feature_ready": 1412,
+  "missing_features": 0,
+  "failures": [],
+  "manifest": "data/processed/mtl_aqa_manifest_features.csv"
+}

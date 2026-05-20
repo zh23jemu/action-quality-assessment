@@ -1,0 +1,58 @@
+{"epoch": 1, "train_loss": 1.3215402364730835, "position": 0.15384615384615385, "armstand": 0.7916666666666667, "rotation_type": 0.09090909090909091, "somersaults": 0.06666666666666667, "twists": 0.08333333333333333, "mean_f1": 0.23728438228438228}
+{
+  "model": "Pose Contrastive",
+  "task": "MTL-AQA multi-attribute classification",
+  "synthetic_smoke": true,
+  "checkpoint": "/mnt/users/xj62kv/action-quality-assessment/outputs/checkpoints/pose_best.pt",
+  "best_mean_f1": 0.23728438228438228,
+  "label_maps": {
+    "position": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    },
+    "armstand": {
+      "0": 0,
+      "1": 1
+    },
+    "rotation_type": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "somersaults": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    },
+    "twists": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3215402364730835,
+      "position": 0.15384615384615385,
+      "armstand": 0.7916666666666667,
+      "rotation_type": 0.09090909090909091,
+      "somersaults": 0.06666666666666667,
+      "twists": 0.08333333333333333,
+      "mean_f1": 0.23728438228438228
+    }
+  ],
+  "env": {
+    "time": "2026-05-19 06:44:01",
+    "project_root": "/mnt/users/xj62kv/action-quality-assessment",
+    "torch": "2.12.0+cu126",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA L40S"
+  }
+}

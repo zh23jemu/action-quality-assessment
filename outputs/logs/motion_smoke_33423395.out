@@ -1,0 +1,24 @@
+{"epoch": 1, "train_loss": 2831.9515380859375, "SRC": 0.8333333333333335, "R-L2": 0.9843106778382241}
+{
+  "model": "Motion Disentangling",
+  "task": "MTL-AQA score regression",
+  "synthetic_smoke": true,
+  "checkpoint": "/mnt/users/xj62kv/action-quality-assessment/outputs/checkpoints/motion_best.pt",
+  "best_SRC": 0.8333333333333335,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2831.9515380859375,
+      "SRC": 0.8333333333333335,
+      "R-L2": 0.9843106778382241
+    }
+  ],
+  "env": {
+    "time": "2026-05-19 06:38:52",
+    "project_root": "/mnt/users/xj62kv/action-quality-assessment",
+    "torch": "2.12.0+cu126",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA L40S"
+  }
+}

@@ -1,0 +1,857 @@
+Requirement already satisfied: pillow in ./.venv/lib/python3.11/site-packages (12.2.0)
+{"processed": 50, "failures": 0}
+{"processed": 100, "failures": 0}
+{"processed": 150, "failures": 0}
+{"processed": 200, "failures": 0}
+{"processed": 250, "failures": 0}
+{"processed": 300, "failures": 1}
+{"processed": 350, "failures": 51}
+{"processed": 400, "failures": 73}
+{"processed": 450, "failures": 73}
+{"processed": 500, "failures": 73}
+{"processed": 550, "failures": 73}
+{"processed": 600, "failures": 82}
+{"processed": 650, "failures": 132}
+{"processed": 700, "failures": 133}
+{"processed": 750, "failures": 133}
+{"processed": 800, "failures": 133}
+{"processed": 850, "failures": 133}
+{"processed": 900, "failures": 133}
+{"processed": 950, "failures": 133}
+{"processed": 1000, "failures": 133}
+{"processed": 1050, "failures": 133}
+{"processed": 1100, "failures": 133}
+{"processed": 1150, "failures": 133}
+{"processed": 1200, "failures": 165}
+{"processed": 1250, "failures": 205}
+{"processed": 1300, "failures": 205}
+{"processed": 1350, "failures": 205}
+{"processed": 1400, "failures": 205}
+{
+  "total": 1412,
+  "feature_ready": 1207,
+  "missing_features": 205,
+  "failures": [
+    {
+      "sample_id": "03_0001",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0002",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0003",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0004",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0005",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0006",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0007",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0008",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0009",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0010",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0011",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0012",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0013",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0014",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0015",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0016",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0017",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0018",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0019",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0020",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0021",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0022",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0023",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0024",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0025",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0026",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0027",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0028",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0029",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0030",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0031",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0032",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0033",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0034",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0035",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0036",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0037",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0038",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0039",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0040",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0041",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0042",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0043",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0044",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0045",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0046",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0047",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0048",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0049",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0050",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0051",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0052",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0053",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0054",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0055",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0056",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0057",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0058",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0059",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0060",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0061",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0062",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0063",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0064",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0065",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0066",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0067",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0068",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0069",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0070",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0071",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0072",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "03_0073",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/03"
+    },
+    {
+      "sample_id": "06_0001",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0002",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0003",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0004",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0005",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0006",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0007",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0008",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0009",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0010",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0011",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0012",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0013",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0014",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0015",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0016",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0017",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0018",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0019",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0020",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0021",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0022",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0023",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0024",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0025",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0026",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0027",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0028",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0029",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0030",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0031",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0032",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0033",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0034",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0035",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0036",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0037",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0038",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0039",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0040",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0041",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0042",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0043",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0044",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0045",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0046",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0047",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0048",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0049",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0050",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0051",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0052",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0053",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0054",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0055",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0056",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0057",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0058",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0059",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "06_0060",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/06"
+    },
+    {
+      "sample_id": "18_0001",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0002",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0003",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0004",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0005",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0006",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0007",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0008",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0009",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0010",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0011",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0012",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0013",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0014",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0015",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0016",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0017",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0018",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0019",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0020",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0021",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0022",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0023",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0024",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0025",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0026",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0027",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0028",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0029",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0030",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0031",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0032",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0033",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0034",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0035",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0036",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0037",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0038",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0039",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0040",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0041",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0042",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0043",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0044",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0045",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0046",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0047",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0048",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0049",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0050",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0051",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0052",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0053",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0054",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0055",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0056",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0057",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0058",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0059",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0060",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0061",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0062",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0063",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0064",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0065",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0066",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0067",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0068",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0069",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0070",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0071",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    },
+    {
+      "sample_id": "18_0072",
+      "error": "帧目录中没有图片文件：data/raw/whole_videos_frames/18"
+    }
+  ],
+  "manifest": "data/processed/mtl_aqa_manifest_features.csv"
+}
