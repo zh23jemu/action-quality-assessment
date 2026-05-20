@@ -62,7 +62,7 @@
 ## Next TODO
 
 - 在服务器运行 `slurm/extract_features.slurm` 或 `.venv/bin/python scripts/extract_features.py`，生成 `data/processed/mtl_aqa_manifest_features.csv`。
-- 使用带特征 manifest 启动 Motion 与 Pose 的正式训练，并保存测试指标 JSON。
+- 服务器拉取最新修复后，重新提交 Motion 与 Pose 的正式训练任务，并保存测试指标 JSON。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
 
 ## Open Issues
@@ -71,6 +71,7 @@
 - Fitness-AQA 原方法主要面向健身动作，Pose Contrastive 的 F1 在 MTL-AQA 上采用动作属性多分类口径，需在报告中说明适配口径。
 - Motion Disentangling 若无法获得原始上游完整实现，需要以论文思想和公开说明实现可运行复现，并在 PPT 中记录差异。
 - 当前帧统计特征是最小可运行真实视频特征，不等价于论文原始 C3D/I3D/pose 特征；正式报告需要说明该适配差异。
+- 训练曾因 `feature_path` 写成 `data/processed/features/...` 时被重复解析为 `data/processed/data/processed/...` 失败，已在路径解析层修复。
 
 ## Architecture Decisions
 

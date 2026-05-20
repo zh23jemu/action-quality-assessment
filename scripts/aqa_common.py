@@ -34,12 +34,31 @@ def project_root() -> Path:
 
 
 def resolve_path(path_value: str, base_dir: Path) -> Path:
-    """把 manifest 中的相对路径解析为绝对路径。"""
+    """把 manifest 中的路径解析为绝对路径。
+
+    manifest 可能由不同脚本生成：有的脚本会写相对 manifest 所在目录的路径
+    （例如 `features/xxx.npy`），有的脚本会写相对项目根目录的路径
+    （例如 `data/processed/features/xxx.npy`）。这里按多个常见基准目录尝试，
+    优先返回真实存在的文件，避免把已经带有 `data/processed` 前缀的路径再次
+    拼到 manifest 目录下，形成 `data/processed/data/processed/...`。
+    """
 
     path = Path(path_value)
     if path.is_absolute():
         return path
-    return (base_dir / path).resolve()
+
+    candidates = [
+        (base_dir / path).resolve(),
+        (project_root() / path).resolve(),
+        (Path.cwd() / path).resolve(),
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    # 如果文件尚未生成，仍返回按项目根目录解析的路径，错误信息会更接近用户在
+    # manifest 中看到的写法；调用方随后会给出明确的“不存在”报错。
+    return candidates[1]
 
 
 def ensure_parent(path: Path) -> None:
