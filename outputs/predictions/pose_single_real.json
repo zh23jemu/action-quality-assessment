@@ -1,0 +1,20 @@
+{
+  "model": "Pose Contrastive",
+  "sample_id": "01_0001",
+  "predicted_attributes": {
+    "position": "2",
+    "armstand": "0",
+    "rotation_type": "2",
+    "somersaults": "7",
+    "twists": "0"
+  },
+  "checkpoint": "outputs/checkpoints/pose_best.pt",
+  "env": {
+    "time": "2026-05-20 18:57:06",
+    "project_root": "/mnt/users/xj62kv/action-quality-assessment",
+    "torch": "2.12.0+cu126",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA L40S"
+  }
+}

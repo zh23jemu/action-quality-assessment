@@ -1,0 +1,15 @@
+{
+  "model": "Motion Disentangling",
+  "sample_id": "01_0001",
+  "true_score": 88.0,
+  "pred_score": 65.9732894897461,
+  "checkpoint": "outputs/checkpoints/motion_best.pt",
+  "env": {
+    "time": "2026-05-20 18:57:01",
+    "project_root": "/mnt/users/xj62kv/action-quality-assessment",
+    "torch": "2.12.0+cu126",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA L40S"
+  }
+}
