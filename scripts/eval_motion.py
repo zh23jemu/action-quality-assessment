@@ -29,7 +29,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--input-dim", type=int, default=128)
     parser.add_argument("--hidden-dim", type=int, default=256)
-    parser.add_argument("--metrics", type=Path, default=project_root() / "outputs" / "metrics" / "motion_eval.json")
+    parser.add_argument(
+        "--metrics",
+        "--output",
+        dest="metrics",
+        type=Path,
+        default=project_root() / "outputs" / "metrics" / "motion_eval.json",
+        help="指标 JSON 输出路径；--output 是 --metrics 的等价别名，便于和训练/推理脚本保持直观一致",
+    )
     parser.add_argument("--allow-metadata-fallback", action="store_true", help="允许用样本元信息生成占位特征，正式实验不要开启")
     return parser.parse_args()
 

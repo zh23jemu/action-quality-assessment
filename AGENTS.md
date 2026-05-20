@@ -42,7 +42,7 @@
 
 ## Current Status
 
-已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。服务器 GPU 与两个模型 synthetic smoke 已验证通过；MTL-AQA 15 个原始视频已下载、通过 GitHub Release 同步到服务器并完成抽帧。当前已新增轻量帧统计特征抽取入口，下一步需要在服务器生成 `data/processed/mtl_aqa_manifest_features.csv` 后启动真实训练。
+已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。服务器 GPU 与两个模型 synthetic smoke 已验证通过；MTL-AQA 15 个原始视频已下载、通过 GitHub Release 同步到服务器并完成抽帧。真实帧统计特征已补齐 1412 条样本，Motion 与 Pose 两个训练任务已在服务器完成 30 epoch，并已同步训练日志、指标 JSON、最佳 checkpoint 和单样本推理结果到本地。
 
 ## Recent Changes
 
@@ -52,6 +52,7 @@
 - 新增 Slurm 脚本，默认使用课程约定的 GPU 分区、账号和 QOS。
 - 修复冒烟特征路径二次拼接问题，并兼容 PyTorch 2.6+ checkpoint 默认 `weights_only=True` 的加载策略变化。
 - 本地验证结果：语法检查通过；Motion 冒烟测试输出 SRC/R-L2；Pose 冒烟测试输出五类动作属性 F1；两个模型的单样本推理均可生成 JSON。
+- `eval_motion.py` 与 `eval_pose.py` 已兼容 `--output` 作为 `--metrics` 的别名，修复独立 eval 命令参数不一致的问题。
 - 新增 `scripts/fetch_upstream.py`，已通过 Python 标准库下载并解压 `external/MTL-AQA` 与 `external/Fitness-AQA`。
 - `scripts/prepare_data.py` 已支持解析官方 `Ready_2_Use/MTL-AQA_split_0_data` pkl，生成包含分数、动作属性、起止帧和 split 的 manifest。
 - 本地已通过代理和 Cookie 成功下载 MTL-AQA 全部 15 个视频，并上传到 GitHub Release `mtl-aqa-videos-480p` 供服务器下载。
@@ -62,7 +63,7 @@
 ## Next TODO
 
 - 在服务器运行 `slurm/extract_features.slurm` 或 `.venv/bin/python scripts/extract_features.py`，生成 `data/processed/mtl_aqa_manifest_features.csv`。
-- 服务器拉取最新 `.gitignore` 后，同步 `outputs/` 训练日志、指标 JSON、预测结果和必要 checkpoint 供本地分析。
+- 将训练成功日志、指标 JSON、单样本推理输出和关键问题记录整理进 PPT 与课程报告。
 - 将真实训练日志、测试指标 JSON、单样本推理输出截图加入 PPT 和说明文档。
 
 ## Open Issues
@@ -72,6 +73,7 @@
 - Motion Disentangling 若无法获得原始上游完整实现，需要以论文思想和公开说明实现可运行复现，并在 PPT 中记录差异。
 - 当前帧统计特征是最小可运行真实视频特征，不等价于论文原始 C3D/I3D/pose 特征；正式报告需要说明该适配差异。
 - 训练曾因 `feature_path` 写成 `data/processed/features/...` 时被重复解析为 `data/processed/data/processed/...` 失败，已在路径解析层修复。
+- 上游代码与特征不完整，当前 checkpoint 基于轻量帧统计特征训练，适合作为可运行复现与课程实践结果，但需在报告中说明与论文原始特征存在差异。
 
 ## Architecture Decisions
 
