@@ -29,3 +29,8 @@ Thumbs.db
 
 # 压缩交付包
 *.zip
+
+# 文档渲染检查中间产物
+docs/reports/preview_*/
+docs/reports/*_contact_sheet.jpg
+docs/reports/*.pdf

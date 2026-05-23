@@ -42,7 +42,7 @@
 
 ## Current Status
 
-已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。服务器 GPU 与两个模型 synthetic smoke 已验证通过；MTL-AQA 15 个原始视频已下载、通过 GitHub Release 同步到服务器并完成抽帧。真实帧统计特征已补齐 1412 条样本，Motion 与 Pose 两个训练任务已在服务器完成 30 epoch，并已同步训练日志、指标 JSON、最佳 checkpoint 和单样本推理结果到本地。项目汇报 PPT 初稿已生成并导出 PNG 预览完成视觉检查。
+已创建 MTL-AQA + Fitness-AQA 适配复现实验的项目骨架、训练评估入口、Slurm 脚本、README 和问题记录模板。服务器 GPU 与两个模型 synthetic smoke 已验证通过；MTL-AQA 15 个原始视频已下载、通过 GitHub Release 同步到服务器并完成抽帧。真实帧统计特征已补齐 1412 条样本，Motion 与 Pose 两个训练任务已在服务器完成 30 epoch，并已同步训练日志、指标 JSON、最佳 checkpoint 和单样本推理结果到本地。项目汇报 PPT 初稿已生成并导出 PNG 预览完成视觉检查；实践作业报告和模型训练与测试说明两份 DOCX 已基于模板副本生成，已按交付要求补齐训练测试说明、代码修改说明、输出结果截图和成果分工，并完成渲染预览检查。两份报告均已改为客户可直接使用的 Python 命令运行口径，不依赖集群调度环境；实践报告正文已调整为首行缩进和两端对齐，改善文字偏左的问题。
 
 ## Recent Changes
 
@@ -61,11 +61,16 @@
 - 新增 `scripts/extract_features.py` 与 `slurm/extract_features.slurm`，使用真实抽帧图片生成 128 维轻量视频特征并输出带 `feature_path` 的 manifest。
 - 更新训练 Slurm 脚本，默认读取 `data/processed/mtl_aqa_manifest_features.csv`。
 - 新增 `scripts/make_report_ppt.py`，生成 14 页项目汇报 PPT `docs/Motion-Pose_汇报.pptx`，并导出 `docs/ppt_preview/` 与 `docs/ppt_preview_contact_sheet.jpg` 用于排版检查。
+- 新增 `scripts/make_reports.py`，基于模板副本生成 `docs/reports/实践作业报告_MTL-AQA动作质量评估复现.docx` 和 `docs/reports/模型训练与测试说明_MTL-AQA动作质量评估复现.docx`，并导出逐页 PNG 预览用于版式检查。
+- 对照课程交付要求更新两份 DOCX：训练测试说明文档覆盖环境、运行步骤、成功运行截图、测试指标截图和单样本推理截图；课程总结报告覆盖项目目标、项目介绍、实现思路、技术说明、代码修改说明、成果分工和输出结果截图。
+- 更新模型训练与测试说明文档，将原集群提交口径全部改为 `.venv/bin/python ...` 直接运行方式，并同步更新训练成功终端输出图。
+- 更新实践作业报告文档，将运行环境、代码修改说明和实验环境中的集群调度表述改为直接 Python 训练，并调整普通正文为正式报告排版。
+- 修复实践作业报告模板残留分栏设置导致正文显示成左侧窄栏的问题，生成脚本会删除 `w:cols` 下的旧分栏子节点并强制单栏。
 
 ## Next TODO
 
-- 按客户要求补充训练成功终端截图、两个模型测试指标输出截图、单样本推理完整终端截图，或整理为指标文件附件。
-- 将 PPT 内容进一步压缩成课程报告和训练说明文档，明确“可运行适配复现”与“官方原封不动完整复现”的边界。
+- 按实际提交信息补充两份 DOCX 封面中的组号、成员姓名、学号、课程名称和单位信息。
+- 如客户需要原始终端截图，可用服务器终端重新截图替换当前训练说明文档中由日志整理生成的终端输出图。
 - 若后续获得更完整上游代码或原始 C3D/I3D/pose 特征，在不改变 manifest 接口的前提下替换当前轻量帧统计特征。
 
 ## Open Issues
